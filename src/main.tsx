@@ -38,6 +38,7 @@ const WalletApp = () => {
     );
 };
 
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <WalletApp />
