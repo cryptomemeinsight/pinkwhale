@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-pinkwhale-dark text-white font-body overflow-x-hidden;
+    background-image: 
+      radial-gradient(circle at 50% 0%, rgba(255, 0, 170, 0.15), transparent 50%),
+      radial-gradient(circle at 100% 50%, rgba(0, 240, 255, 0.1), transparent 40%);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display uppercase tracking-wider;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-pinkwhale-dark;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-pinkwhale-pink rounded-full;
+}
+
+/* Glass Card Utilities */
+.glass-panel {
+  @apply bg-pinkwhale-card/30 backdrop-blur-xl border border-white/10 shadow-2xl;
+}
+
+.neon-text {
+  text-shadow: 0 0 10px rgba(255, 0, 170, 0.5), 0 0 20px rgba(255, 0, 170, 0.3);
+}
+
+.neon-border {
+  box-shadow: 0 0 15px rgba(255, 0, 170, 0.2);
+}
