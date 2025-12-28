@@ -24,12 +24,12 @@ jobs:
           cache: npm
 
       - name: Install dependencies
-        run: npm ci
+        run: npm ci   # This installs ALL deps, including dev ones
 
       - name: Build
         run: npm run build
         env:
-          VITE_BASE: /pinkwhale/   # Optional, but ensures base path if needed
+          VITE_BASE: /pinkwhale/   # Ensures correct asset paths
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
