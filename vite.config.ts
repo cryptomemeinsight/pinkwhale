@@ -13,6 +13,7 @@ export default defineConfig({
         global: true,
         process: true,
       },
-    })
+    }),
   ],
+  base: '/pinkwhale/',  // ← ADD THIS LINE
 })
